@@ -1,6 +1,7 @@
 DROP TABLE IF EXISTS user_roles;
-DROP TABLE IF EXISTS meals;
+DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS cart;
 DROP SEQUENCE IF EXISTS global_seq;
 
 CREATE SEQUENCE global_seq START WITH 100000;
@@ -12,8 +13,10 @@ CREATE TABLE users
   email            VARCHAR                 NOT NULL,
   password         VARCHAR                 NOT NULL,
   registered       TIMESTAMP DEFAULT now() NOT NULL,
-  enabled          BOOL DEFAULT TRUE       NOT NULL,
-  calories_per_day INTEGER DEFAULT 2000    NOT NULL
+  phone            VARCHAR                 NOT NULL,
+  address          VARCHAR                 NOT NULL
+
+
 );
 CREATE UNIQUE INDEX users_unique_email_idx ON users (email);
 
@@ -25,13 +28,17 @@ CREATE TABLE user_roles
   FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
 
-CREATE TABLE meals (
+CREATE TABLE products (
   id          INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
-  user_id     INTEGER   NOT NULL,
-  date_time   TIMESTAMP NOT NULL,
+  name        VARCHAR   NOT NULL,
   description TEXT      NOT NULL,
-  calories    INT       NOT NULL,
+  price       INTEGER   NOT NULL
+);
+
+CREATE TABLE cart (
+  id   INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
+  date TIMESTAMP DEFAULT now() NOT NULL,
+  user_id INTEGER NOT NULL,
+  price INTEGER NOT NULL,
   FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
 );
-CREATE UNIQUE INDEX meals_unique_user_datetime_idx
-  ON meals (user_id, date_time);
