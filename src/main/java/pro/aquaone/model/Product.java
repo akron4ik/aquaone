@@ -1,82 +1,74 @@
 package pro.aquaone.model;
 
 import pro.aquaone.HasId;
-
-
 import javax.persistence.*;
-import java.time.LocalDate;
+import javax.validation.constraints.NotNull;
+
 
 
 @Entity
-//@Table(name = "voices", uniqueConstraints = @UniqueConstraint(columnNames = {"date_time", "user_id"}, name = "voices_unique_datetime_idx"))
+@Table(name = "products")
 public class Product extends AbstractBaseEntity implements HasId {
 
+
+    @Column(name = "name", nullable = false)
+    @NotNull
     private String name;
+
+    @Column(name = "description", nullable = false)
+    @NotNull
     private String description;
+
+    @Column(name = "price", nullable = false)
+    @NotNull
     private Integer price;
 
-    /*//@Column(name = "date_time", nullable = false)
-    @NotNull
-    @DateTimeFormat(iso = DateTimeFormat.ISO.DATE)
-    private LocalDate localDate;*/
-
-    /*@ManyToOne(fetch = FetchType.LAZY)
-    //@JoinColumn(name = "restaurant_id", foreignKey = @ForeignKey(name = "GLOBAL_SEQ", foreignKeyDefinition = "START WITH 100000"))
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    private Restaurant restaurant;*/
-
-   /* @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", foreignKey = @ForeignKey(name = "GLOBAL_SEQ", foreignKeyDefinition = "START WITH 100000"))
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    private User user;*/
 
     public Product(){
     }
 
-    /*public Product(Voice v){
-        this(v.getId(), v.getLocalDate(), v.getRestaurant(), v.getUser());
+    public Product(Product p){
+        this(p.getId(), p.getName(), p.getDescription(), p.getPrice());
     }
 
-    public Product(Integer id, LocalDate localDate, Restaurant restaurant, User user){
+    public Product(Integer id, String name, String description, Integer price){
         super(id);
-        this.localDate = localDate;
-        this.restaurant = restaurant;
-        this.user = user;
+        this.name = name;
+        this.description = description;
+        this.price = price;
     }
 
-    public LocalDate getLocalDate() {
-        return localDate;
+    public String getName() {
+        return name;
     }
 
-    public void setLocalDate(LocalDate localDate) {
-        this.localDate = localDate;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Restaurant getRestaurant() {
-        return restaurant;
+    public String getDescription() {
+        return description;
     }
 
-    public void setRestaurant(Restaurant restaurant) {
-        this.restaurant = restaurant;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public User getUser() {
-        return user;
+    public Integer getPrice() {
+        return price;
     }
 
-    public void setUser(User user) {
-        this.user = user;
+    public void setPrice(Integer price) {
+        this.price = price;
     }
 
     @Override
     public String toString() {
-        return "Voice{" +
-                "localDate=" + localDate +
-                ", restaurant=" + restaurant +
-                ", user=" + user +
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", description='" + description + '\'' +
+                ", price=" + price +
                 ", id=" + id +
                 '}';
-    }*/
-
-
+    }
 }
