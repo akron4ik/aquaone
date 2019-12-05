@@ -1,7 +1,7 @@
 package pro.aquaone;
 
 
-import workplace.model.User;
+import pro.aquaone.model.User;
 
 public class AuthorizedUser extends org.springframework.security.core.userdetails.User {
     private static final long serialVersionUID = 1L;

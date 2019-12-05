@@ -11,10 +11,7 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
-import java.util.Collection;
-import java.util.Date;
-import java.util.EnumSet;
-import java.util.Set;
+import java.util.*;
 
 @Entity
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
@@ -38,6 +35,9 @@ public class User extends AbstractBaseEntity implements HasId {
     @JsonProperty(access = JsonProperty.Access.WRITE_ONLY)
     private String password;
 
+    @Column(name = "enabled", nullable = false, columnDefinition = "bool default true")
+    private boolean enabled = true;
+
     @Column(name = "registered", nullable = false, columnDefinition = "TIMESTAMP DEFAULT now()")
     @NotNull
     @JsonProperty(access = JsonProperty.Access.READ_ONLY)
@@ -60,26 +60,31 @@ public class User extends AbstractBaseEntity implements HasId {
     @Size(min = 5, max = 100)
     private String address;
 
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
+    @OrderBy("date DESC")
+    protected List<Cart> orders;
+
     public User() {
     }
 
     public User(User u){
-        this(u.getId(), u.getName(), u.getEmail(), u.getPassword(),
+        this(u.getId(), u.getName(), u.getEmail(), u.getPassword(), u.isEnabled(),
                 u.getRegistered(), u.getRoles(), u.getPhone(), u.getAddress());
 
     }
 
     public User(Integer id, String name, String email, String password,
                 Role role,String phone, String address, Role... roles) {
-        this(id, name, email, password, new Date(),  EnumSet.of(role, roles), phone, address);
+        this(id, name, email, password, true, new Date(),  EnumSet.of(role, roles), phone, address);
     }
 
-    public User(Integer id, String name, String email, String password,
+    public User(Integer id, String name, String email, String password, boolean enabled,
                 Date registered, Collection<Role> roles, String phone, String address) {
         super(id);
         this.name = name;
         this.email = email;
         this.password = password;
+        this.enabled = enabled;
         this.registered = registered;
         this.phone = phone;
         this.address = address;
@@ -113,6 +118,18 @@ public class User extends AbstractBaseEntity implements HasId {
 
     public void setRoles(Set<Role> roles) {
         this.roles = roles;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
+    }
+
+    public List<Cart> getOrders() {
+        return orders;
     }
 
     public String getName() {
