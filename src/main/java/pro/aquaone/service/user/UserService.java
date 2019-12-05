@@ -9,6 +9,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import pro.aquaone.AuthorizedUser;
 import pro.aquaone.model.User;
@@ -52,6 +53,13 @@ public class UserService implements UserDetailsService {
     public User getByEmail(String email){
          Assert.notNull(email,"email must not be null" );
          return checkNotFound(repository.getUserByEmail(email), "email=" + email);
+    }
+
+    @Transactional
+    public void enable(int id, boolean enabled) {
+        User user = get(id);
+        user.setEnabled(enabled);
+        repository.save(user);
     }
 
     public User getByPhone(String phone){

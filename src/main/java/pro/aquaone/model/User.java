@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import pro.aquaone.HasId;
 import javax.persistence.*;
@@ -14,6 +15,7 @@ import javax.validation.constraints.Size;
 import java.util.*;
 
 @Entity
+@Transactional
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 @Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "email", name = "users_unique_email_idx"))
 public class User extends AbstractBaseEntity implements HasId {
@@ -74,7 +76,7 @@ public class User extends AbstractBaseEntity implements HasId {
     }
 
     public User(Integer id, String name, String email, String password,
-                Role role,String phone, String address, Role... roles) {
+                 String phone, String address, Role role, Role... roles) {
         this(id, name, email, password, true, new Date(),  EnumSet.of(role, roles), phone, address);
     }
 
