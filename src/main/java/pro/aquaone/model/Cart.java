@@ -16,6 +16,10 @@ import java.time.LocalDateTime;
 @Table(name = "cart")
 public class Cart extends AbstractBaseEntity implements HasId {
 
+    public static final String ALL_SORTED = "Cart.getAll";
+    public static final String DELETE = "Cart.delete";
+    public static final String GET_BETWEEN = "Cart.getBetween";
+
     @Column(name = "date", nullable = false)
     @NotNull
     @DateTimeFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
