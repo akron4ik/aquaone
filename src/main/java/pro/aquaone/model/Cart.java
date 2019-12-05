@@ -4,6 +4,7 @@ import org.hibernate.annotations.OnDelete;
 import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.Range;
 import org.springframework.format.annotation.DateTimeFormat;
+import org.springframework.transaction.annotation.Transactional;
 import pro.aquaone.HasId;
 import pro.aquaone.View;
 import pro.aquaone.util.DateTimeUtil;
@@ -14,6 +15,7 @@ import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "cart")
+@Transactional
 public class Cart extends AbstractBaseEntity implements HasId {
 
     public static final String ALL_SORTED = "Cart.getAll";
@@ -75,13 +77,4 @@ public class Cart extends AbstractBaseEntity implements HasId {
         this.price = price;
     }
 
-    @Override
-    public String toString() {
-        return "Cart{" +
-                "date=" + date +
-                ", user=" + user +
-                ", price=" + price +
-                ", id=" + id +
-                '}';
-    }
 }
