@@ -56,7 +56,7 @@ public class CartService {
 
     public List<Cart> getBetweenDatesWithUserId(@Nullable LocalDate startDate, @Nullable LocalDate endDate, int userId) {
         return getCartsBetweenDatesByUserId(adjustStartDateTime(startDate), adjustEndDateTime(endDate), userId);
-    }
+    }// Пока не ясно на сколько этот метод актуален, возможно его придется удалить
 
     public List<Cart> getCartsBetweenDatesByUserId(LocalDateTime startDate, LocalDateTime endDate, int userId){
         return repository.getCartsBetweenDatesByUserId(startDate, endDate, userId);
@@ -64,7 +64,7 @@ public class CartService {
 
     public List<Cart> getBetweenDates(@Nullable LocalDate startDate, @Nullable LocalDate endDate){
       return getCartsBetweenDates(adjustStartDateTime(startDate), adjustEndDateTime(endDate));
-    }
+    }// Пока не ясно на сколько этот метод актуален, возможно его придется удалить
 
     public List<Cart> getCartsBetweenDates(LocalDateTime startDate, LocalDateTime endDate){
         return repository.getCartsBetweenDates(startDate, endDate);
