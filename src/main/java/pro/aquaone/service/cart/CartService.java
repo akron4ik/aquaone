@@ -7,6 +7,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 import pro.aquaone.model.Cart;
 import pro.aquaone.model.User;
+import pro.aquaone.repository.cart.CartRepository;
 import pro.aquaone.repository.cart.CrudCartRepository;
 import pro.aquaone.repository.user.CrudUserRepository;
 
@@ -21,37 +22,34 @@ import static pro.aquaone.util.ValidationUtil.checkNotFoundWithId;
 @Service
 public class CartService {
 
-    private final CrudCartRepository repository;
-    private final CrudUserRepository userRepository;
+    private final CartRepository repository;
 
     @Autowired
-    public CartService(CrudCartRepository repository, CrudUserRepository userRepository){
+    public CartService(CartRepository repository){
         this.repository = repository;
-        this.userRepository = userRepository;
     }
 
     public Cart get(int id){
-        return checkNotFoundWithId(repository.findById(id).orElse(null), id);
+        return checkNotFoundWithId(repository.get(id), id);
     }
 
     public Cart get(int id, int userId){
-        return checkNotFoundWithId(repository.getCartByIdAndUserId(id, userId), id);
+        return checkNotFoundWithId(repository.get(id, userId), id);
     }
 
     @Transactional
     public Cart create(Cart cart, int userId){
         Assert.notNull(cart, "cart must be not null");
-        User user = userRepository.getOne(userId);
-        cart.setUser(user);
-        if(cart.isNew()){
-            return repository.save(cart);
-        } else {
-            return get(cart.getId(), userId) == null ? null : repository.save(cart);
-        }
+        return repository.save(cart, userId);
     }
 
-    public void delete(int id){
-        checkNotFoundWithId(repository.deleteCartById(id), id);
+    public void update(Cart cart, int userId){
+        Assert.notNull(cart, "product must not be null");
+        checkNotFoundWithId(repository.save(cart, userId), cart.getId());
+    }
+
+    public void delete(int id, int userId){
+        checkNotFoundWithId(repository.delete(id, userId), id);
     }
 
     public List<Cart> getBetweenDatesWithUserId(@Nullable LocalDate startDate, @Nullable LocalDate endDate, int userId) {
@@ -67,7 +65,7 @@ public class CartService {
     }// Пока не ясно на сколько этот метод актуален, возможно его придется удалить
 
     public List<Cart> getCartsBetweenDates(LocalDateTime startDate, LocalDateTime endDate){
-        return repository.getCartsBetweenDates(startDate, endDate);
+        return repository.getAllBetweenDates(startDate, endDate);
     }
 
     public List<Cart> getAllByUserId(int userId){

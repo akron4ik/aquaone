@@ -1,6 +1,7 @@
 package pro.aquaone.service.user;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.data.domain.Sort;
@@ -14,6 +15,8 @@ import org.springframework.util.Assert;
 import pro.aquaone.AuthorizedUser;
 import pro.aquaone.model.User;
 import pro.aquaone.repository.user.CrudUserRepository;
+import pro.aquaone.to.UserTo;
+import pro.aquaone.util.UserUtil;
 
 import java.util.List;
 
@@ -21,7 +24,7 @@ import static pro.aquaone.util.UserUtil.prepareToSave;
 import static pro.aquaone.util.ValidationUtil.checkNotFound;
 import static pro.aquaone.util.ValidationUtil.checkNotFoundWithId;
 
-@Service
+@Service("userService")
 @Scope(proxyMode = ScopedProxyMode.TARGET_CLASS)
 public class UserService implements UserDetailsService {
     private static final Sort SORT_NAME_EMAIL = new Sort(Sort.Direction.ASC, "name", "email");
@@ -83,6 +86,13 @@ public class UserService implements UserDetailsService {
     public void update(User user){
         Assert.notNull(user, "user must not be null");
         repository.save(prepareToSave(user, passwordEncoder));
+    }
+
+    @CacheEvict(value = "users", allEntries = true)
+    @Transactional
+    public void update(UserTo userTo) {
+        User user = get(userTo.id());
+        repository.save(prepareToSave(UserUtil.updateFromTo(user, userTo), passwordEncoder));
     }
 
 

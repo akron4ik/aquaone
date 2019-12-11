@@ -19,14 +19,14 @@ public interface CrudCartRepository extends JpaRepository<Cart, Integer> {
 
     @Modifying
     @Transactional
-    int deleteCartById(int id);
+    @Query("DELETE FROM Cart c WHERE c.id=:id AND c.user.id=:userId")
+    int deleteCartByIdAndUserID(@Param("id")int id, @Param("userId") int userId);
 
-    @Transactional
-    Cart getCartByIdAndUserId(int id, int userId);
-
+    @SuppressWarnings("JpaQlInspection")
     @Query("SELECT c FROM Cart c WHERE c.user.id=:userId AND c.date BETWEEN :startDate AND :endDate ORDER BY c.date")
     List<Cart> getCartsBetweenDatesByUserId(@Param("startDate")LocalDateTime startDate, @Param("endDate") LocalDateTime endDate,@Param("userId") int userId);
 
+    @SuppressWarnings("JpaQlInspection")
     @Query("SELECT c FROM Cart c WHERE c.date BETWEEN :startDate AND :endDate ORDER BY c.date")
     List<Cart> getCartsBetweenDates(@Param("startDate") LocalDateTime startDate, @Param("endDate") LocalDateTime endDate);
 

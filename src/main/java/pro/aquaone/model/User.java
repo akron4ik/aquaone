@@ -4,9 +4,13 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import org.hibernate.annotations.BatchSize;
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
+import org.hibernate.validator.constraints.SafeHtml;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
+import pro.aquaone.HasEmail;
 import pro.aquaone.HasId;
+import pro.aquaone.View;
+
 import javax.persistence.*;
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -18,7 +22,7 @@ import java.util.*;
 @Transactional
 @Cache(usage = CacheConcurrencyStrategy.NONSTRICT_READ_WRITE)
 @Table(name = "users", uniqueConstraints = @UniqueConstraint(columnNames = "email", name = "users_unique_email_idx"))
-public class User extends AbstractBaseEntity implements HasId {
+public class User extends AbstractBaseEntity implements HasEmail {
 
     @Column(name = "name", nullable = false)
     @Size(min = 2, max = 200)
@@ -29,6 +33,7 @@ public class User extends AbstractBaseEntity implements HasId {
     @Email
     @NotBlank
     @Size(min = 4, max = 100)
+    @SafeHtml(groups = {View.Web.class})
     private String email;
 
     @Column(name = "password", nullable = false)

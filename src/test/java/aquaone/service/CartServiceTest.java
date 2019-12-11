@@ -42,7 +42,7 @@ public class CartServiceTest extends AbstractServiceTest{
 
     @Test
     void delete() throws Exception {
-        service.delete(CART_1_ID);
+        service.delete(CART_1_ID, USER_ID);
         assertMatch(service.getAll(), CART6,CART4,  CART3,  CART2,  CART5);
     }
 
