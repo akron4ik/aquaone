@@ -16,13 +16,13 @@ INSERT INTO user_roles (role, user_id) VALUES
   ('ROLE_USER', 100001),
   ('ROLE_USER', 100002);
 
-
 INSERT INTO products (name, description, price)
 VALUES ('Вода 19 литров', 'Природная вода', 300),
        ('Вода 1.5 литра', 'Минеральная вода', 150),
        ('Вода 0.5 литра', 'Газированная вода', 85),
        ('Стаканчики', 'Пластиковые', 15),
        ('Ложечки', 'Для кофе', 100);
+
 INSERT INTO cart (date, user_id, price) VALUES
   ('2019-12-01 10:30:00', 100000, 3000),
   ('2019-12-02 11:30:00', 100000, 5000),

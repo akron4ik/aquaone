@@ -20,6 +20,8 @@ public class ProductTestData {
     public static final Product PRODUCT4 = new Product(PRODUCT_4_ID, "Стаканчики", "Пластиковые", 15);
     public static final Product PRODUCT5 = new Product(PRODUCT_5_ID, "Ложечки", "Для кофе", 100);
 
+    public static final List<Product> PRODUCTS = List.of(PRODUCT1, PRODUCT2, PRODUCT3, PRODUCT4, PRODUCT5);
+
     public static void assertMatch(Product actual, Product expected) {
         assertThat(actual)
                 .isEqualToIgnoringGivenFields(expected);
@@ -36,6 +38,9 @@ public class ProductTestData {
     public static ResultMatcher contentJson(Product... expected) {
         return result -> assertMatch(TestUtil.readListFromJsonMvcResult(result, Product.class), List.of(expected));
     }
+    /*public static ResultMatcher contentJson(L expected) {
+        return result -> assertMatch(TestUtil.readListFromJsonMvcResult(result, Product.class), List.of(expected));
+    }*/
 
     public static ResultMatcher contentJson(Product expected) {
         return result -> assertMatch(TestUtil.readFromJsonMvcResult(result, Product.class), expected);

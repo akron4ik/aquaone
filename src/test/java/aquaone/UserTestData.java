@@ -3,6 +3,7 @@ package aquaone;
 import org.springframework.test.web.servlet.ResultMatcher;
 import pro.aquaone.model.Role;
 import pro.aquaone.model.User;
+import pro.aquaone.to.UserTo;
 import pro.aquaone.web.json.JsonUtil;
 
 import java.util.List;
@@ -31,6 +32,12 @@ public class UserTestData {
         assertThat(actual)
                 .isEqualToIgnoringGivenFields(expected, "registered", "orders", "password");
     }
+    public static void assertMatch(UserTo actual, UserTo expected) {
+        assertThat(actual)
+                .isEqualToIgnoringGivenFields(expected,  "password");
+    }
+
+
 
     public static void assertMatch(Iterable<User> actual, User... expected) {
         assertMatch(actual, List.of(expected));
@@ -49,6 +56,9 @@ public class UserTestData {
     }
 
     public static String jsonWithPassword(User user, String passw) {
+        return JsonUtil.writeAdditionProps(user, "password", passw);
+    }
+    public static String jsonWithPassword(UserTo user, String passw) {
         return JsonUtil.writeAdditionProps(user, "password", passw);
     }
 }
