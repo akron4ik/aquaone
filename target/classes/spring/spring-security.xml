@@ -17,9 +17,6 @@
         <intercept-url pattern="/rest/profile/register" access="isAnonymous()"/>
         <intercept-url pattern="/**" access="isAuthenticated()"/>
         <intercept-url pattern="/products" method="GET" access="permitAll()"/>
-
-
-
     </http>
 
     <!--<http>
