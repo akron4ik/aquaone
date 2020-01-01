@@ -42,16 +42,9 @@
     <mvc:resources mapping="/resources/**" location=" /resources/"/>
     <mvc:resources mapping="/webjars/**" location="classpath:/META-INF/resources/webjars/"/>
 
-<<<<<<< HEAD
-    <!--<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-          p:prefix="/WEB-INF/jsp/"
-          p:suffix=".jsp"/>-->
-    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
-          p:prefix="/app/public"
-          p:suffix=".html"/>
-=======
+
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver"
           p:prefix="/WEB-INF/jsp/"
           p:suffix=".jsp"/>
->>>>>>> 4fe8199bf73a2dde5a59078303f1fca4d9f22684
+
 </beans>

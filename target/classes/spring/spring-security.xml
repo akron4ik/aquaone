@@ -10,22 +10,12 @@
     <http pattern="/rest/**" use-expressions="true" name="restSecurityFilterChain" create-session="stateless">
         <http-basic/>
         <csrf disabled="true"/>
-<<<<<<< HEAD
         <intercept-url pattern="/rest/products" access="permitAll()"/>
         <intercept-url pattern="/rest/admin/**" access="permitAll()"/>
         <intercept-url pattern="/rest/admin/users" access="permitAll()"/>
         <intercept-url pattern="/rest/profile/register" access="isAnonymous()"/>
         <!--<intercept-url pattern="/**" access="isAuthenticated()"/>-->
-        <intercept-url pattern="/rest/products" access="permitAll()"/>
-=======
-        <intercept-url pattern="/products/**" method="GET" access="permitAll()"/>
 
-        <intercept-url pattern="/rest/admin/**" access="permitAll()"/>
-        <intercept-url pattern="/rest/admin/users" access="permitAll()"/>
-        <intercept-url pattern="/rest/profile/register" access="isAnonymous()"/>
-        <intercept-url pattern="/**" access="isAuthenticated()"/>
-        <intercept-url pattern="/products" method="GET" access="permitAll()"/>
->>>>>>> 4fe8199bf73a2dde5a59078303f1fca4d9f22684
     </http>
 
     <!--<http>
