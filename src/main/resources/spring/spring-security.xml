@@ -15,7 +15,7 @@
         <intercept-url pattern="/rest/admin/users" access="permitAll()"/>
         <intercept-url pattern="/rest/profile/register" access="isAnonymous()"/>
         <!--<intercept-url pattern="/**" access="isAuthenticated()"/>-->
-        <intercept-url pattern="/rest/products" access="permitAll()"/>
+
     </http>
 
     <!--<http>

@@ -14,7 +14,11 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
 public class ProductControllerTest extends AbstractControllerTest {
+<<<<<<< HEAD
     private static final String REST_URL = "/rest/products";
+=======
+    private static final String REST_URL = "/profile/products";
+>>>>>>> 4fe8199bf73a2dde5a59078303f1fca4d9f22684
 
     @Test
     public void getAll() throws Exception {
