@@ -1,0 +1,966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="watershop:war exploded" />
+    </artifacts-to-build>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="a85e7790-9b04-42c3-981a-56ed8363b4c6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/watershop_war.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/watershop_war_exploded.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d781dbe5-80cb-4e96-9fa0-a7f328abf993.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d781dbe5-80cb-4e96-9fa0-a7f328abf993/storage_v2/_src_/database/aquaone.Kpau0g.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d781dbe5-80cb-4e96-9fa0-a7f328abf993/storage_v2/_src_/database/aquaone.Kpau0g/schema/information_schema.FNRwLQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d781dbe5-80cb-4e96-9fa0-a7f328abf993/storage_v2/_src_/database/aquaone.Kpau0g/schema/pg_catalog.0S1ZNQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources/d781dbe5-80cb-4e96-9fa0-a7f328abf993/storage_v2/_src_/database/aquaone.Kpau0g/schema/public.abK9xQ.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__antlr_antlr_2_7_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_classic_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__ch_qos_logback_logback_core_1_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_3_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_annotations_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_core_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_core_jackson_databind_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_hibernate5_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_jackson_datatype_jackson_datatype_jsr310_2_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_jayway_jsonpath_json_path_2_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_istack_istack_commons_runtime_3_0_7.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_xml_fastinfoset_FastInfoset_1_2_15.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_javax_activation_api_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_annotation_javax_annotation_api_1_3_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_cache_cache_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_persistence_javax_persistence_api_2_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_servlet_jstl_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_transaction_jta_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_2_0_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_xml_bind_jaxb_api_2_3_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_bytebuddy_byte_buddy_1_9_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_accessors_smart_1_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__net_minidev_json_smart_2_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_jdbc_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_juli_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_tomcat_tomcat_servlet_api_9_0_29.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_aspectj_aspectjrt_1_9_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_assertj_assertj_core_3_12_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_dom4j_dom4j_2_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ehcache_ehcache_3_7_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_javax_el_3_0_1_b11.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_jaxb_runtime_2_4_0_b180830_0438.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_glassfish_jaxb_txw2_2_4_0_b180830_0438.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_common_hibernate_commons_annotations_5_1_0_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_core_5_4_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_jcache_5_4_3_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_0_17_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_javassist_javassist_3_24_0_GA.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_jandex_2_0_5_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_logging_jboss_logging_3_3_2_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jboss_spec_javax_transaction_jboss_transaction_api_1_2_spec_1_1_1_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jsoup_jsoup_1_12_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_5_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jvnet_staxex_stax_ex_1_8.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_ow2_asm_asm_5_0_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_postgresql_postgresql_42_2_6.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_slf4j_slf4j_api_1_7_25.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_commons_2_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_jpa_2_1_9_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_acl_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_config_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_core_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_taglibs_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_test_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_security_spring_security_web_5_1_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_aop_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_beans_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_core_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_expression_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jcl_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_jdbc_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_orm_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_test_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_tx_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_web_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webmvc_5_1_7_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone.war" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/META-INF/MANIFEST.MF" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/AuthorizedUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/HasEmail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/HasId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/View$Persist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/View$Web.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/View.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/model/AbstractBaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/model/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/model/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/repository/JpaUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/repository/cart/CartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/repository/cart/CrudCartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/repository/product/CrudProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/repository/user/CrudUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/service/cart/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/service/product/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/service/user/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/to/BaseTo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/to/UserTo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/DateTimeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/UserUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/ValidationUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/exception/ApplicationException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/exception/ErrorInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/exception/ErrorType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/exception/IllegalRequestDataException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/exception/ModificationRestrictionException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/util/exception/NotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/ExceptionInfoHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/GlobalControllerExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/MessageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/SecurityUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/basket/BasketRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/products/AbstractProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/products/AdminProductRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/products/ProductRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/user/AbstractRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/user/AdminRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/user/ProfileRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/controller/user/UniqueMailValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/converter/DateTimeFormatters$LocalDateFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/converter/DateTimeFormatters$LocalDateTimeFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/converter/DateTimeFormatters$LocalTimeFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/converter/DateTimeFormatters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/json/JacksonObjectMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/json/JsonUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/pro/aquaone/web/json/JsonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/FastInfoset-1.2.15.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/antlr-2.7.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/aspectjrt-1.9.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/byte-buddy-1.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/cache-api-1.1.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/classmate-1.3.4.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/dom4j-2.1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/ehcache-3.7.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/hibernate-commons-annotations-5.1.0.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/hibernate-core-5.4.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/hibernate-jcache-5.4.3.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/hibernate-validator-6.0.17.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/istack-commons-runtime-3.0.7.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jackson-annotations-2.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jackson-core-2.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jackson-databind-2.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jackson-datatype-hibernate5-2.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jackson-datatype-jsr310-2.9.10.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jandex-2.0.5.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/javassist-3.24.0-GA.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/javax.activation-api-1.2.0.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/javax.annotation-api-1.3.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/javax.persistence-api-2.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jaxb-api-2.3.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jaxb-runtime-2.4.0-b180830.0438.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jboss-logging-3.3.2.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jsoup-1.12.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jstl-1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/jta-1.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/logback-classic-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/logback-core-1.2.3.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/postgresql-42.2.6.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/slf4j-api-1.7.25.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-aop-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-beans-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-context-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-context-support-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-core-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-data-commons-2.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-data-jpa-2.1.9.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-expression-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-jcl-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-jdbc-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-orm-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-security-acl-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-security-config-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-security-core-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-security-taglibs-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-security-web-5.1.5.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-tx-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-web-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/spring-webmvc-5.1.7.RELEASE.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/stax-ex-1.8.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/tomcat-jdbc-9.0.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/tomcat-juli-9.0.29.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/txw2-2.4.0-b180830.0438.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/lib/validation-api-2.0.1.Final.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/cache/ehcache.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/initDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/populateDB.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/postgres.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/db/tomcat.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/AuthorizedUser.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/HasEmail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/HasId.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/View$Persist.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/View$Web.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/View.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/model/AbstractBaseEntity.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/model/Cart.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/model/Product.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/model/Role.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/model/User.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/repository/JpaUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/repository/cart/CartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/repository/cart/CrudCartRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/repository/product/CrudProductRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/repository/user/CrudUserRepository.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/service/cart/CartService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/service/product/ProductService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/service/user/UserService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/to/BaseTo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/to/UserTo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/DateTimeUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/UserUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/ValidationUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/exception/ApplicationException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/exception/ErrorInfo.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/exception/ErrorType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/exception/IllegalRequestDataException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/exception/ModificationRestrictionException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/util/exception/NotFoundException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/ExceptionInfoHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/GlobalControllerExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/MessageUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/SecurityUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/basket/BasketRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/products/AbstractProductController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/products/AdminProductRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/products/ProductRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/user/AbstractRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/user/AdminRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/user/ProfileRestController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/controller/user/UniqueMailValidator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/converter/DateTimeFormatters$LocalDateFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/converter/DateTimeFormatters$LocalDateTimeFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/converter/DateTimeFormatters$LocalTimeFormatter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/converter/DateTimeFormatters.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/json/JacksonObjectMapper.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/json/JsonUtil$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/pro/aquaone/web/json/JsonUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-app.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-db.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-security.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/spring/spring-tools.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/tomcat/context.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/CartTestData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/ProductTestData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/TestUtil.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/TimingExtension.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/UserTestData.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/service/AbstractServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/service/CartServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/service/ProductServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/service/UserServiceTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/AbstractControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/ResourceControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/RootControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/cart/BasketRestControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/json/JsonUtilTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/product/AdminProductControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/product/ProductControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/user/AdminUIControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/aquaone/web/user/ProfileUIControllerTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/watershop.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/log/aquaone.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/aquaone.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/AuthorizedUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/HasEmail.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/HasId.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/View.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/model/AbstractBaseEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/model/Cart.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/model/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/model/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/model/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/repository/JpaUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/repository/cart/CartRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/repository/cart/CrudCartRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/repository/product/CrudProductRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/repository/user/CrudUserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/service/cart/CartService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/service/product/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/service/user/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/to/BaseTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/to/UserTo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/DateTimeUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/UserUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/ValidationUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/exception/ApplicationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/exception/ErrorInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/exception/ErrorType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/exception/IllegalRequestDataException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/exception/ModificationRestrictionException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/util/exception/NotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/ExceptionInfoHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/GlobalControllerExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/MessageUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/SecurityUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/RootController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/basket/BasketRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/products/AbstractProductController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/products/AdminProductRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/products/ProductRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/user/AbstractRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/user/AdminRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/user/ProfileRestController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/controller/user/UniqueMailValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/converter/DateTimeFormatters.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/json/JacksonObjectMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/java/pro/aquaone/web/json/JsonUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/cache/ehcache.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/cache/ehcache.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/db/initDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/db/initDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/db/populateDB.sql" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/db/populateDB.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/db/postgres.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/db/postgres.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/db/tomcat.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/db/tomcat.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/logback.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/logback.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/spring/spring-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/spring/spring-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/spring/spring-db.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/spring/spring-db.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/spring/spring-mvc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/spring/spring-mvc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/spring/spring-tools.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/spring/spring-tools.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/resources/tomcat/context.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/classes/tomcat/context.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/aquaone/WEB-INF/web.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/CartTestData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/ProductTestData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/TestUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/TimingExtension.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/UserTestData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/service/AbstractServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/service/CartServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/service/ProductServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/service/UserServiceTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/AbstractControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/ResourceControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/RootControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/cart/BasketRestControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/json/JsonUtilTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/product/AdminProductControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/product/ProductControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/user/AdminUIControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/java/aquaone/web/user/ProfileUIControllerTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/backend-aquaone-shop/src/test/resources/logback-test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/logback-test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/public/images/aqua — копия.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/public/images/banner_background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/actionTypes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/actions/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/api/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/conteiners/banner/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/conteiners/header/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/conteiners/products/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/reducers/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/reducers/products.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/reducers/productsPage.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/routes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/node_modules/selectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/Isotope/isotope.pkgd.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/OwlCarousel2-2.2.1/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/OwlCarousel2-2.2.1/animate.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/OwlCarousel2-2.2.1/owl.carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/OwlCarousel2-2.2.1/owl.carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/OwlCarousel2-2.2.1/owl.theme.default.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/OwlCarousel2-2.2.1/owl.video.play.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/easing/easing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/css/fontawesome-all.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/fontawesome-free-5.0.1/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/greensock/ScrollToPlugin.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/greensock/TimelineMax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/greensock/TweenMax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/greensock/animation.gsap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/jquery-ui-1.12.1.custom/jquery-ui.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/jquery-ui-1.12.1.custom/jquery-ui.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/parallax-js-master/parallax.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/scrollmagic/ScrollMagic.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/ajax-loader.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/fonts/slick.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/fonts/slick.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/fonts/slick.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/fonts/slick.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/slick.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/plugins/slick-1.8.0/slick.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/blog_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/blog_single_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/blog_single_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/blog_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/bootstrap4/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/bootstrap4/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/bootstrap4/popper.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/cart_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/cart_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/contact_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/contact_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/main_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/product_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/product_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/regular_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/regular_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/shop_responsive.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/src/styles/shop_styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend-aquaone-shop/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-app.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-app.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/spring/spring-security.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/spring/spring-security.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/META-INF/context.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="aquaone: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="aquaone: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="aquaone: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="watershop" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="feature/frontend-next" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="$PROJECT_DIR$/.idea" />
+      </set>
+    </option>
+  </component>
+  <component name="LogFilters">
+    <option name="FILTER_ERRORS" value="false" />
+    <option name="FILTER_WARNINGS" value="false" />
+    <option name="FILTER_INFO" value="true" />
+    <option name="FILTER_DEBUG" value="true" />
+    <option name="CUSTOM_FILTER" />
+  </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
+  <component name="ProjectId" id="1VkP9SKNqKfDbI20aXPEtPMRtcE" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.21257485" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/backend-aquaone-shop" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Tomcat" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="watershop:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="Unnamed_watershop_2" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52668" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="watershop:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/watershop_war_exploded/" />
+      <option name="UPDATING_POLICY" value="restart-server" />
+      <deployment>
+        <artifact name="watershop:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/watershop_war_exploded" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="_watershop" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="52668" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="watershop:war exploded" />
+        </option>
+      </method>
+    </configuration>
+    <configuration default="true" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Remote" APPLICATION_SERVER_NAME="Tomcat 9.0.29" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="LOCAL" value="false" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="watershop:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <data>
+          <option name="targets">
+            <list>
+              <WatchedTargetModelImpl>
+                <option name="name" value="CONTEXT_XML" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="c4e0c1cd-c97b-475a-ba22-066f0ff799e3" />
+                    <id>c4e0c1cd-c97b-475a-ba22-066f0ff799e3</id>
+                  </TransportTarget>
+                </option>
+                <option name="watchedLocalPath" value="" />
+                <watched-path />
+                <name>CONTEXT_XML</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="c4e0c1cd-c97b-475a-ba22-066f0ff799e3" />
+                    <id>c4e0c1cd-c97b-475a-ba22-066f0ff799e3</id>
+                  </TransportTarget>
+                </transport-target>
+              </WatchedTargetModelImpl>
+              <StagingTargetModelImpl>
+                <option name="name" value="STAGING" />
+                <option name="stagingRemotePath" value="" />
+                <option name="transportStagingTarget">
+                  <TransportTarget>
+                    <option name="id" value="e697f5eb-4f44-42fc-8eaf-003a5ff7965f" />
+                    <id>e697f5eb-4f44-42fc-8eaf-003a5ff7965f</id>
+                  </TransportTarget>
+                </option>
+                <staging-path />
+                <name>STAGING</name>
+                <transport-target>
+                  <TransportTarget>
+                    <option name="id" value="e697f5eb-4f44-42fc-8eaf-003a5ff7965f" />
+                    <id>e697f5eb-4f44-42fc-8eaf-003a5ff7965f</id>
+                  </TransportTarget>
+                </transport-target>
+              </StagingTargetModelImpl>
+            </list>
+          </option>
+          <option name="transportHostId" />
+        </data>
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="TOMCAT_LOCALHOST_LOG_ID" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="64054" />
+        <option name="LOCAL" value="false" />
+      </RunnerSettings>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="watershop:war exploded" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Tomcat Server" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a85e7790-9b04-42c3-981a-56ed8363b4c6" name="Default Changelist" comment="" />
+      <created>1577793968006</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1577793968006</updated>
+      <workItem from="1577793972776" duration="4675000" />
+      <workItem from="1577799151451" duration="868000" />
+      <workItem from="1577800057737" duration="220000" />
+      <workItem from="1577800302665" duration="18000" />
+      <workItem from="1577800407383" duration="2392000" />
+      <workItem from="1577803994826" duration="21000" />
+      <workItem from="1577805679771" duration="1147000" />
+      <workItem from="1577812435883" duration="704000" />
+      <workItem from="1577815212668" duration="5657000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="426" y="195" key="#Assign_Data_Sources" timestamp="1577816358587">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="425" y="195" key="#Assign_Data_Sources/0.23.1633.1027@0.23.1633.1027" timestamp="1577815449164" />
+    <state x="426" y="195" key="#Assign_Data_Sources/0.23.1635.1027@0.23.1635.1027" timestamp="1577816358587" />
+    <state x="426" y="195" key="#Assign_Data_Sources/0.23.1637.1027@0.23.1637.1027" timestamp="1577796348385" />
+    <state x="618" y="350" key="#BuildArtifactsBeforeRunChooser" timestamp="1577801617942">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="618" y="350" key="#BuildArtifactsBeforeRunChooser/0.23.1635.1027@0.23.1635.1027" timestamp="1577801617942" />
+    <state x="619" y="350" key="#BuildArtifactsBeforeRunChooser/0.23.1637.1027@0.23.1637.1027" timestamp="1577797245089" />
+    <state x="426" y="196" key="#Deployment" timestamp="1577796769407">
+      <screen x="0" y="23" width="1637" height="1027" />
+    </state>
+    <state x="426" y="196" key="#Deployment/0.23.1637.1027@0.23.1637.1027" timestamp="1577796769407" />
+    <state x="425" y="195" width="1010" height="669" key="#Project_Structure" timestamp="1577805934874">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="425" y="195" width="1010" height="669" key="#Project_Structure/0.23.1635.1027@0.23.1635.1027" timestamp="1577805934874" />
+    <state x="536" y="156" key="#Tomcat" timestamp="1577800309534">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="536" y="156" key="#Tomcat/0.23.1635.1027@0.23.1635.1027" timestamp="1577800309534" />
+    <state x="537" y="156" key="#Tomcat/0.23.1637.1027@0.23.1637.1027" timestamp="1577798879222" />
+    <state x="536" y="91" key="#Tomcat_9.0.29" timestamp="1577806016132">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="536" y="91" key="#Tomcat_9.0.29/0.23.1635.1027@0.23.1635.1027" timestamp="1577806016132" />
+    <state x="537" y="91" key="#Tomcat_9.0.29/0.23.1637.1027@0.23.1637.1027" timestamp="1577796771267" />
+    <state x="296" y="130" width="1071" height="816" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1577895009253">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="296" y="130" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1633.1027@0.23.1633.1027" timestamp="1577813324804" />
+    <state x="296" y="130" width="1071" height="816" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1635.1027@0.23.1635.1027" timestamp="1577895009253" />
+    <state x="296" y="130" width="1071" height="816" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1637.1027@0.23.1637.1027" timestamp="1577798982167" />
+    <state x="290" y="192" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1638.1027@0.23.1638.1027" timestamp="1577796175352" />
+    <state x="440" y="102" width="1011" height="846" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1577795663729">
+      <screen x="0" y="23" width="1637" height="1027" />
+    </state>
+    <state x="440" y="102" width="1011" height="846" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.23.1637.1027@0.23.1637.1027" timestamp="1577795663729" />
+    <state x="0" y="23" width="1635" height="1027" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable" timestamp="1577805877172">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="0" y="23" width="1635" height="1027" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1635.1027@0.23.1635.1027" timestamp="1577805877172" />
+    <state x="431" y="203" key="#com.intellij.j2ee.appServerIntegrations.ApplicationServersConfigurable/0.23.1637.1027@0.23.1637.1027" timestamp="1577798471549" />
+    <state x="514" y="606" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath" timestamp="1577802754848">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="514" y="606" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.23.1635.1027@0.23.1635.1027" timestamp="1577802754848" />
+    <state x="515" y="606" key="#com.intellij.javaee.module.view.common.J2EE.J2EEDeploymentDescriptorLocationPanel.changeDDPath/0.23.1637.1027@0.23.1637.1027" timestamp="1577797085514" />
+    <state x="643" y="606" key="#com.intellij.javaee.module.view.web.EditWebRootDialog" timestamp="1577801240250">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="643" y="606" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.23.1635.1027@0.23.1635.1027" timestamp="1577801240250" />
+    <state x="644" y="606" key="#com.intellij.javaee.module.view.web.EditWebRootDialog/0.23.1637.1027@0.23.1637.1027" timestamp="1577797058294" />
+    <state width="609" height="252" key="GridCell.Tab.0.bottom" timestamp="1577895657757">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.0.bottom/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497564" />
+    <state width="609" height="252" key="GridCell.Tab.0.bottom/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657757" />
+    <state width="1056" height="224" key="GridCell.Tab.0.bottom/0.23.1637.1027@0.23.1637.1027" timestamp="1577799133896" />
+    <state width="609" height="252" key="GridCell.Tab.0.center" timestamp="1577895657756">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.0.center/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497563" />
+    <state width="609" height="252" key="GridCell.Tab.0.center/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657756" />
+    <state width="1056" height="224" key="GridCell.Tab.0.center/0.23.1637.1027@0.23.1637.1027" timestamp="1577799133895" />
+    <state width="609" height="252" key="GridCell.Tab.0.left" timestamp="1577895657755">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.0.left/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497561" />
+    <state width="609" height="252" key="GridCell.Tab.0.left/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657755" />
+    <state width="1056" height="224" key="GridCell.Tab.0.left/0.23.1637.1027@0.23.1637.1027" timestamp="1577799133894" />
+    <state width="609" height="252" key="GridCell.Tab.0.right" timestamp="1577895657756">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.0.right/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497563" />
+    <state width="609" height="252" key="GridCell.Tab.0.right/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657756" />
+    <state width="1056" height="224" key="GridCell.Tab.0.right/0.23.1637.1027@0.23.1637.1027" timestamp="1577799133895" />
+    <state width="609" height="252" key="GridCell.Tab.1.bottom" timestamp="1577895657758">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.1.bottom/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497565" />
+    <state width="609" height="252" key="GridCell.Tab.1.bottom/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657758" />
+    <state width="609" height="252" key="GridCell.Tab.1.center" timestamp="1577895657758">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.1.center/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497565" />
+    <state width="609" height="252" key="GridCell.Tab.1.center/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657758" />
+    <state width="609" height="252" key="GridCell.Tab.1.left" timestamp="1577895657757">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.1.left/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497564" />
+    <state width="609" height="252" key="GridCell.Tab.1.left/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657757" />
+    <state width="609" height="252" key="GridCell.Tab.1.right" timestamp="1577895657758">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.1.right/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497565" />
+    <state width="609" height="252" key="GridCell.Tab.1.right/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657758" />
+    <state width="609" height="252" key="GridCell.Tab.2.bottom" timestamp="1577895657759">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.2.bottom/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497567" />
+    <state width="609" height="252" key="GridCell.Tab.2.bottom/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657759" />
+    <state width="609" height="252" key="GridCell.Tab.2.center" timestamp="1577895657758">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.2.center/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497566" />
+    <state width="609" height="252" key="GridCell.Tab.2.center/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657758" />
+    <state width="609" height="252" key="GridCell.Tab.2.left" timestamp="1577895657758">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.2.left/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497566" />
+    <state width="609" height="252" key="GridCell.Tab.2.left/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657758" />
+    <state width="609" height="252" key="GridCell.Tab.2.right" timestamp="1577895657759">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state width="1012" height="262" key="GridCell.Tab.2.right/0.23.1633.1027@0.23.1633.1027" timestamp="1577817497566" />
+    <state width="609" height="252" key="GridCell.Tab.2.right/0.23.1635.1027@0.23.1635.1027" timestamp="1577895657759" />
+    <state x="265" y="67" width="1180" height="874" key="SettingsEditor" timestamp="1577895035697">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="265" y="67" key="SettingsEditor/0.23.1633.1027@0.23.1633.1027" timestamp="1577813337198" />
+    <state x="265" y="67" width="1180" height="874" key="SettingsEditor/0.23.1635.1027@0.23.1635.1027" timestamp="1577895035697" />
+    <state x="267" y="415" width="1181" height="555" key="SettingsEditor/0.23.1637.1027@0.23.1637.1027" timestamp="1577797232596" />
+    <state x="411" y="276" key="Vcs.Push.Dialog.v2" timestamp="1577894187876">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="411" y="276" key="Vcs.Push.Dialog.v2/0.23.1635.1027@0.23.1635.1027" timestamp="1577894187876" />
+    <state x="402" y="174" key="com.intellij.javaee.view.ServerArtifactsDialog" timestamp="1577801960438">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="402" y="174" key="com.intellij.javaee.view.ServerArtifactsDialog/0.23.1635.1027@0.23.1635.1027" timestamp="1577801960438" />
+    <state x="201" y="248" key="new project wizard" timestamp="1577806232548">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="201" y="248" key="new project wizard/0.23.1635.1027@0.23.1635.1027" timestamp="1577806232548" />
+    <state x="411" y="227" key="spring file set editor" timestamp="1577816210952">
+      <screen x="0" y="23" width="1635" height="1027" />
+    </state>
+    <state x="411" y="227" key="spring file set editor/0.23.1635.1027@0.23.1635.1027" timestamp="1577816210952" />
+    <state x="412" y="227" key="spring file set editor/0.23.1637.1027@0.23.1637.1027" timestamp="1577795006688" />
+  </component>
+</project>

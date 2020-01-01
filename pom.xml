@@ -19,7 +19,7 @@
         <spring.version>5.1.7.RELEASE</spring.version>
         <spring.security.version>5.1.5.RELEASE</spring.security.version>
         <spring-data-jpa.version>2.1.9.RELEASE</spring-data-jpa.version>
-        <jackson-json.version>2.9.10.1</jackson-json.version>
+        <jackson-json.version>2.9.10</jackson-json.version>
         <tomcat.version>9.0.29</tomcat.version>
 
         <!-- Logging -->
@@ -42,6 +42,19 @@
 
         <!--Tools-->
         <ehcache.version>3.7.1</ehcache.version>
+
+        <!--webjars-->
+        <!--<webjars-bootstrap.version>4.3.1</webjars-bootstrap.version>
+        <webjars-jquery.version>3.4.1</webjars-jquery.version>
+        <webjars-datetimepicker.version>2.5.20</webjars-datetimepicker.version>
+        <webjars-noty.version>3.1.4</webjars-noty.version>
+        <webjars-datatables.version>1.10.19</webjars-datatables.version>-->
+
+        <!--frontend-->
+        <!--<frontend-src-dir> ${project.basedir}/src/main/app</frontend-src-dir>
+        <node.version>v12.13.1</node.version>
+        <yarn.version>v1.19.1 </yarn.version>
+        <frontend-maven-plugin.version>1.7.6</frontend-maven-plugin.version>-->
 
     </properties>
 
@@ -67,6 +80,80 @@
                     <argLine>-Dfile.encoding=UTF-8</argLine>
                 </configuration>
             </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <configuration>
+                    <webXml>src\main\webapp\WEB-INF\web.xml</webXml>
+                </configuration>
+            </plugin>
+
+            <!-- React Node Yarn -->
+            <!--<plugin>
+                <groupId>com.github.eirslett</groupId>
+                <artifactId>frontend-maven-plugin</artifactId>
+                <version>${frontend-maven-plugin.version}</version>
+
+                <configuration>
+                    <nodeVersion>${node.version}</nodeVersion>
+                    <yarnVersion>${yarn.version}</yarnVersion>
+                    <workingDirectory>${frontend-src-dir}</workingDirectory>
+                    <installDirectory>${project.build.directory}</installDirectory>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>install-frontend-tools</id>
+                        <goals>
+                            <goal>install-node-and-yarn</goal>
+                        </goals>
+                    </execution>
+
+                    <execution>
+                        <id>yarn-install</id>
+                        <goals>
+                            <goal>yarn</goal>
+                        </goals>
+                        <configuration>
+                            <arguments>install</arguments>
+                        </configuration>
+                    </execution>
+
+                    <execution>
+                        <id>build-frontend</id>
+                        <goals>
+                            <goal>yarn</goal>
+                        </goals>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <arguments>build</arguments>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
+
+            <!--<plugin>
+                <artifactId>maven-resources-plugin</artifactId>
+                <version>3.0.1</version>
+                <executions>
+                    <execution>
+                        <id>position-react-build</id>
+                        <goals>
+                            <goal>copy-resources</goal>
+                        </goals>
+                        <phase>prepare-package</phase>
+                        <configuration>
+                            <outputDirectory>${project.build.outputDirectory}/static</outputDirectory>
+                            <resources>
+                                <resource>
+                                    <directory>${frontend-src-dir}/build</directory>
+                                    <filtering>false</filtering>
+                                </resource>
+                            </resources>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>-->
 
             <!--  http://stackoverflow.com/questions/4305935/is-it-possible-to-supply-tomcat6s-context-xml-file-via-the-maven-cargo-plugin#4417945 -->
             <!-- https://codehaus-cargo.github.io/cargo/Tomcat+9.x.html -->
@@ -232,6 +319,56 @@
         <groupId>org.springframework</groupId>
         <artifactId>spring-webmvc</artifactId>
     </dependency>
+
+    <!-- Webjars (static dependencies distributed as JAR files) -->
+    <!--<dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>jquery</artifactId>
+        <version>${webjars-jquery.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>bootstrap</artifactId>
+        <version>${webjars-bootstrap.version}</version>
+        <exclusions>
+            <exclusion>
+                <groupId>org.webjars</groupId>
+                <artifactId>jquery</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>org.webjars</groupId>
+        <artifactId>datatables</artifactId>
+        <version>${webjars-datatables.version}</version>
+        <exclusions>
+            <exclusion>
+                <groupId>org.webjars</groupId>
+                <artifactId>jquery</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>org.webjars.bower</groupId>
+        <artifactId>datetimepicker</artifactId>
+        <version>${webjars-datetimepicker.version}</version>
+        <exclusions>
+            <exclusion>
+                <groupId>org.webjars.bower</groupId>
+                <artifactId>jquery</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>org.webjars.bower</groupId>
+                <artifactId>php-date-formatter</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
+    <dependency>
+        <groupId>org.webjars.bower</groupId>
+        <artifactId>noty</artifactId>
+        <version>${webjars-noty.version}</version>
+    </dependency>-->
+
     <!--JSON-->
     <dependency>
         <groupId>com.fasterxml.jackson.core</groupId>
@@ -289,7 +426,19 @@
         <version>3.12.2</version>
         <scope>test</scope>
     </dependency>
+
+    <dependency>
+        <groupId>org.postgresql</groupId>
+        <artifactId>postgresql</artifactId>
+        <version>${postgresql.version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.tomcat</groupId>
+        <artifactId>tomcat-jdbc</artifactId>
+        <version>${tomcat.version}</version>
+    </dependency>
 </dependencies>
+
 
     <dependencyManagement>
         <dependencies>
