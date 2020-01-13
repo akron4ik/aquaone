@@ -22,6 +22,11 @@ public class AbstractProductController {
         return service.get(id);
     }
 
+    public List<Product> getProductsByCategoryId(int id){
+        log.info("get products by category id", id);
+        return service.getByCategoryId(id);
+    }
+
     public void delete(int id) {
         log.info("delete product with id {}", id);
         service.delete(id);

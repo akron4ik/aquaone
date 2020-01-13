@@ -16,4 +16,6 @@ public interface CrudProductRepository extends JpaRepository<Product, Integer> {
     @Transactional
     int deleteProductById(int id);
 
+    List<Product> getProductsByCategoryId(int id);
+
 }

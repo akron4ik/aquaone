@@ -31,9 +31,11 @@ CREATE TABLE user_roles
 
 CREATE TABLE products (
   id          INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
+  categoryId  INTEGER   NOT NULL,
   name        VARCHAR   NOT NULL,
   description TEXT      NOT NULL,
-  price       INTEGER   NOT NULL
+  price       INTEGER   NOT NULL,
+  image       VARCHAR   NOT NULL
 );
 
 CREATE TABLE cart (

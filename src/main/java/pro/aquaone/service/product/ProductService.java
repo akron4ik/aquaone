@@ -24,6 +24,10 @@ public class ProductService {
         return checkNotFoundWithId(repository.findById(id).orElse(null), id);
     }
 
+    public List<Product> getByCategoryId(int id){
+        return repository.getProductsByCategoryId(id);
+    }
+
     public void delete(int id){
         checkNotFoundWithId(repository.deleteProductById(id), id);
     }

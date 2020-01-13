@@ -19,7 +19,7 @@ public class ProductServiceTest extends AbstractServiceTest {
 
     @Test
     void create() throws Exception {
-        Product newProduct = new Product(null, "Кулер", "Новый кулер", 6000);
+        Product newProduct = new Product(null, 3, "Кулер", "Новый кулер", 6000, "/img/kash19.jpg");
         Product created = service.create(newProduct);
         assertMatch(created, newProduct);
         assertMatch(service.getAll(), PRODUCT1, PRODUCT2, PRODUCT3, PRODUCT4, PRODUCT5, created);
