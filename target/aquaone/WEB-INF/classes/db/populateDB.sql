@@ -2,12 +2,13 @@ DELETE FROM user_roles;
 DELETE FROM products;
 DELETE FROM users;
 DELETE FROM cart;
+DELETE FROM category;
 ALTER SEQUENCE global_seq RESTART WITH 100000;
 
-INSERT INTO users (name, email, password, phone, address) VALUES
-  ('User', 'user@yandex.ru', '{noop}password', '8(985)123-4567', 'Moscow, Amurskay st, 48 - 52'),
-  ('Admin', 'admin@gmail.com', '{noop}admin', '+7(916)123-7654', 'Voronezh, Lenin street, 1, 22'),
-  ('User2', 'user@mail.ru', '{noop}password1', '8(985)123-0000', 'Moscow, Amurskay st, 48 - 52');
+INSERT INTO users (name, surname, email, password, phone, address) VALUES
+  ('User', 'User', 'user@yandex.ru', '{noop}password', '8(985)123-4567', 'Moscow, Amurskay st, 48 - 52'),
+  ('Admin', 'Admin' , 'admin@gmail.com', '{noop}admin', '+7(916)123-7654', 'Voronezh, Lenin street, 1, 22'),
+  ('User2', 'User2', 'user@mail.ru', '{noop}password1', '8(985)123-0000', 'Moscow, Amurskay st, 48 - 52');
 
 
 INSERT INTO user_roles (role, user_id) VALUES
@@ -15,6 +16,11 @@ INSERT INTO user_roles (role, user_id) VALUES
   ('ROLE_ADMIN', 100001),
   ('ROLE_USER', 100001),
   ('ROLE_USER', 100002);
+
+INSERT INTO category (id, name) VALUES
+(1, 'Вода'),
+(2, 'Посуда'),
+(3, 'Кулеры');
 
 INSERT INTO products (categoryId, name, description, price, image)
 VALUES (1,'Вода 19 литров', 'Природная вода', 300, '/img/main/kash19.jpg'),
@@ -31,10 +37,11 @@ VALUES (1,'Вода 19 литров', 'Природная вода', 300, '/img/
        (3, 'Кулер для воды LC-AEL-180c LCD', 'Оснащен 16-ти литровым шкафчиком и монитором', 12100, '/img/main/cooler2.jpg'),
        (3, 'Кулер для воды LC-AEL-812a', 'Кулер для воды с нижней загрузкой бутыли', 36750, '/img/main/cooler3.jpg');
 
-INSERT INTO cart (date, user_id, price) VALUES
-  ('2019-12-01 10:30:00', 100000, 3000),
-  ('2019-12-02 11:30:00', 100000, 5000),
-  ('2019-12-03 20:30:00', 100001, 4400),
-  ('2019-12-05 21:40:00', 100001, 1000),
-  ('2019-12-01 11:40:00', 100002, 1800),
-  ('2019-12-06 16:35:00', 100002, 1800);
+INSERT INTO cart (date, phone, surname, price, comment) VALUES
+  ('2019-12-01 10:30:00', '1234567', 'Ivanov', 3000, 'Test data'),
+  ('2019-12-02 11:30:00', '1234567', 'Ivanov', 5000, 'Test data'),
+  ('2019-12-03 20:30:00', '1234567', 'Ivanov', 4400, 'Test data'),
+  ('2019-12-05 21:40:00', '1234567', 'Petrov', 1000, 'Test data'),
+  ('2019-12-01 11:40:00', '1234567', 'Petrov', 1800, 'Test data'),
+  ('2019-12-06 16:35:00', '1234567', 'Petrov', 1800, 'Test data');
+

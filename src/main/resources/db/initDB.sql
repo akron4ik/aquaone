@@ -2,6 +2,7 @@ DROP TABLE IF EXISTS user_roles;
 DROP TABLE IF EXISTS products;
 DROP TABLE IF EXISTS users CASCADE;
 DROP TABLE IF EXISTS cart;
+DROP TABLE IF EXISTS category;
 DROP SEQUENCE IF EXISTS global_seq;
 
 CREATE SEQUENCE global_seq START WITH 100000;
@@ -10,6 +11,8 @@ CREATE TABLE users
 (
   id               INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
   name             VARCHAR                 NOT NULL,
+  surname          VARCHAR                         ,
+  organization     VARCHAR                         ,
   email            VARCHAR                 NOT NULL,
   password         VARCHAR                 NOT NULL,
   registered       TIMESTAMP DEFAULT now() NOT NULL,
@@ -27,6 +30,11 @@ CREATE TABLE user_roles
   role    VARCHAR,
   CONSTRAINT user_roles_idx UNIQUE (user_id, role),
   FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+
+);
+CREATE TABLE category (
+  id INTEGER NOT NULL PRIMARY KEY ,
+  name VARCHAR NOT NULL
 );
 
 CREATE TABLE products (
@@ -35,13 +43,16 @@ CREATE TABLE products (
   name        VARCHAR   NOT NULL,
   description TEXT      NOT NULL,
   price       INTEGER   NOT NULL,
-  image       VARCHAR   NOT NULL
+  image       VARCHAR   NOT NULL,
+  FOREIGN KEY (categoryId) REFERENCES category(id)
 );
 
 CREATE TABLE cart (
   id   INTEGER PRIMARY KEY DEFAULT nextval('global_seq'),
   date TIMESTAMP DEFAULT now() NOT NULL,
-  user_id INTEGER NOT NULL,
+  phone VARCHAR NOT NULL,
+  surname VARCHAR NOT NULL,
   price INTEGER NOT NULL,
-  FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+  comment VARCHAR
 );
+

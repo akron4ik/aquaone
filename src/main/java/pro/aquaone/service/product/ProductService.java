@@ -1,11 +1,10 @@
 package pro.aquaone.service.product;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.security.access.method.P;
 import org.springframework.stereotype.Service;
 import org.springframework.util.Assert;
 import pro.aquaone.model.Product;
-import pro.aquaone.repository.product.CrudProductRepository;
+import pro.aquaone.repository.product.ProductRepository;
 
 import java.util.List;
 
@@ -13,10 +12,10 @@ import static pro.aquaone.util.ValidationUtil.checkNotFoundWithId;
 
 @Service
 public class ProductService {
-    private final CrudProductRepository repository;
+    private final ProductRepository repository;
 
     @Autowired
-    public ProductService(CrudProductRepository repository){
+    public ProductService(ProductRepository repository){
         this.repository = repository;
     }
 

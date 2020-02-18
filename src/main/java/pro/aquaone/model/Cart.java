@@ -1,12 +1,9 @@
 package pro.aquaone.model;
 
-import org.hibernate.annotations.OnDelete;
-import org.hibernate.annotations.OnDeleteAction;
 import org.hibernate.validator.constraints.Range;
 import org.springframework.format.annotation.DateTimeFormat;
 import org.springframework.transaction.annotation.Transactional;
 import pro.aquaone.HasId;
-import pro.aquaone.View;
 import pro.aquaone.util.DateTimeUtil;
 
 import javax.persistence.*;
@@ -18,40 +15,42 @@ import java.time.LocalDateTime;
 @Transactional
 public class Cart extends AbstractBaseEntity implements HasId {
 
-    public static final String ALL_SORTED = "Cart.getAll";
-    public static final String DELETE = "Cart.delete";
-    public static final String GET_BETWEEN = "Cart.getBetween";
+   @Column(name = "date", nullable = false)
+   @NotNull
+   @DateTimeFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
+   private LocalDateTime date;
 
-    @Column(name = "date", nullable = false)
-    @NotNull
-    @DateTimeFormat(pattern = DateTimeUtil.DATE_TIME_PATTERN)
-    private LocalDateTime date;
+   @NotNull
+   @Column(name = "phone")
+   private String phone;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id", nullable = false)
-    @OnDelete(action = OnDeleteAction.CASCADE)
-    @NotNull(groups = View.Persist.class)
-    private User user;
+   @NotNull
+   @Column(name = "surname")
+   private String surname;
 
-    @NotNull
-    @Column(name = "price", nullable = false)
-    @Range(min = 10, max = 100000)
-    private Integer price;
+   @NotNull
+   @Column(name = "price", nullable = false)
+   @Range(min = 10, max = 100000)
+   private Integer price;
 
-    public Cart(){
+   @Column(name = "comment")
+   private String comment;
 
+   public Cart(){
+   }
+
+   public Cart(Cart c){
+        this(c.getId(), c.getDate(), c.getPhone(), c.getSurname(), c.getPrice(), c.getComment());
     }
 
-    public Cart(Cart c){
-        this(c.getId(), c.getDate(), c.getUser(), c.getPrice());
-    }
-
-    public Cart(Integer id, LocalDateTime date, User user, int price){
+   public Cart(Integer id, LocalDateTime date, String phone, String surname, int price, String comment){
         super(id);
         this.date = date;
-        this.user = user;
+        this.phone = phone;
+        this.surname = surname;
         this.price = price;
-    }
+        this.comment = comment;
+   }
 
     public LocalDateTime getDate() {
         return date;
@@ -59,14 +58,6 @@ public class Cart extends AbstractBaseEntity implements HasId {
 
     public void setDate(LocalDateTime date) {
         this.date = date;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
     }
 
     public Integer getPrice() {
@@ -77,4 +68,27 @@ public class Cart extends AbstractBaseEntity implements HasId {
         this.price = price;
     }
 
+    public String getPhone() {
+        return phone;
+    }
+
+    public void setPhone(String phone) {
+        this.phone = phone;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getComment() {
+        return comment;
+    }
+
+    public void setComment(String comment) {
+        this.comment = comment;
+    }
 }

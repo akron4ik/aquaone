@@ -4,11 +4,10 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
-import pro.aquaone.model.Cart;
 import pro.aquaone.model.Role;
 import pro.aquaone.model.User;
 import pro.aquaone.service.user.UserService;
-import pro.aquaone.util.exception.NotFoundException;
+import pro.aquaone.util.exception.UserNotFoundException;
 
 import java.util.Collections;
 import java.util.Date;
@@ -30,7 +29,7 @@ public class UserServiceTest extends AbstractServiceTest {
 
     @Test
     void create() throws Exception{
-        User newUser = new User(null, "Created", "created@created.ru", "created",
+        User newUser = new User(null, "Created", "Created", "", "created@created.ru", "created",
                 "8(985)123-4567", "Moscow, Amurskay st, 48 - 52 ",  Role.ROLE_USER);
         User created = service.create(newUser);
         newUser.setId(created.getId());
@@ -42,7 +41,7 @@ public class UserServiceTest extends AbstractServiceTest {
     @Test
     void duplicateMailCreate() throws Exception {
         assertThrows(DataAccessException.class, () ->
-                service.create(new User(null, "Duplicate", "admin@gmail.com", "newPass",
+                service.create(new User(null, "Duplicate", "Duplicate", "", "admin@gmail.com", "newPass",
                         true, new Date(), Collections.singletonList( Role.ROLE_USER),
                         "created@created.ru", "created")));
     }
@@ -61,7 +60,7 @@ public class UserServiceTest extends AbstractServiceTest {
 
     @Test
     void getNotFound() throws Exception {
-        assertThrows(NotFoundException.class, () ->
+        assertThrows(UserNotFoundException.class, () ->
                 service.get(1));
     }
 
@@ -106,12 +105,5 @@ public class UserServiceTest extends AbstractServiceTest {
     void getAll(){
         List<User> actual = service.getAll();
         assertMatch(actual, ADMIN, USER, USER2);
-    }
-
-    @Test
-    void getWithOrders(){
-        User user = service.getWithOrders(USER_ID);
-        List<Cart> orders = user.getOrders();
-        System.out.println(orders);//Доделать тест после того как сделаю CART TEST
     }
 }

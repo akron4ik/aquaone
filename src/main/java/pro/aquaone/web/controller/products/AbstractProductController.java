@@ -3,7 +3,9 @@ package pro.aquaone.web.controller.products;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import pro.aquaone.model.Category;
 import pro.aquaone.model.Product;
+import pro.aquaone.service.category.CategoryService;
 import pro.aquaone.service.product.ProductService;
 
 import java.util.List;
@@ -17,14 +19,12 @@ public class AbstractProductController {
     @Autowired
     ProductService service;
 
+    @Autowired
+    CategoryService categoryService;
+
     public Product get(int id) {
         log.info("get product with id {}", id);
         return service.get(id);
-    }
-
-    public List<Product> getProductsByCategoryId(int id){
-        log.info("get products by category id", id);
-        return service.getByCategoryId(id);
     }
 
     public void delete(int id) {
@@ -48,6 +48,7 @@ public class AbstractProductController {
         log.info("update {}", product);
         service.update(product);
     }
+
 
 
 }

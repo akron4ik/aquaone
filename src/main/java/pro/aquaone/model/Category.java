@@ -1,8 +1,26 @@
 package pro.aquaone.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
+
+@Entity
+@Table(name = "category")
 public class Category {
+
+    @Id
+    @Column(name = "id")
+    @NotNull
     private Integer id;
+
+    @Column(name = "name")
+    @NotNull
     private String name;
+
+    public Category() {
+    }
 
     public Category(Integer id, String name) {
         this.id = id;

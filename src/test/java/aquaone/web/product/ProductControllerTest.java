@@ -7,7 +7,6 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 
 import static aquaone.ProductTestData.*;
 import static aquaone.TestUtil.userHttpBasic;
-import static aquaone.UserTestData.ADMIN;
 import static aquaone.UserTestData.USER;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
@@ -25,6 +24,7 @@ public class ProductControllerTest extends AbstractControllerTest {
                 .andDo(print())
                 .andExpect(status().isOk())
                 .andExpect(content().contentTypeCompatibleWith(MediaType.APPLICATION_JSON))
-                .andExpect(contentJson(PRODUCT1, PRODUCT2, PRODUCT3, PRODUCT4, PRODUCT5));
+                .andExpect(contentJson(PRODUCT1, PRODUCT2, PRODUCT3, PRODUCT4, PRODUCT5,
+                        PRODUCT6, PRODUCT7, PRODUCT8, PRODUCT9, PRODUCT10, PRODUCT11, PRODUCT12, PRODUCT13));
     }
 }

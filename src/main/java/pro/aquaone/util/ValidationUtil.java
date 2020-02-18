@@ -2,9 +2,9 @@ package pro.aquaone.util;
 
 import org.slf4j.Logger;
 import pro.aquaone.HasId;
-import pro.aquaone.util.exception.ErrorType;
-import pro.aquaone.util.exception.IllegalRequestDataException;
-import pro.aquaone.util.exception.NotFoundException;
+import pro.aquaone.model.User;
+import pro.aquaone.util.exception.InvalidDataException;
+import pro.aquaone.util.exception.UserNotFoundException;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.*;
@@ -30,13 +30,13 @@ public class ValidationUtil {
 
     public static void checkNotFound(boolean found, String arg) {
         if (!found) {
-            throw new NotFoundException(arg);
+            throw new UserNotFoundException(arg);
         }
     }
 
     public static void checkNew(HasId bean) {
         if (!bean.isNew()) {
-            throw new IllegalRequestDataException(bean + " must be new (id=null)");
+            throw new InvalidDataException(bean + " must be new (id=null)");
         }
     }
 
@@ -45,7 +45,7 @@ public class ValidationUtil {
         if (bean.isNew()) {
             bean.setId(id);
         } else if (bean.id() != id) {
-            throw new IllegalRequestDataException(bean + " must be with id=" + id);
+            throw new InvalidDataException(bean + " must be with id=" + id);
         }
     }
 
@@ -81,7 +81,7 @@ public class ValidationUtil {
         }
     }
 
-    public static Throwable logAndGetRootCause(Logger log, HttpServletRequest req, Exception e, boolean logException, ErrorType errorType) {
+    /*public static Throwable logAndGetRootCause(Logger log, HttpServletRequest req, Exception e, boolean logException, ErrorType errorType) {
         Throwable rootCause = ValidationUtil.getRootCause(e);
         if (logException) {
             log.error(errorType + " at request " + req.getRequestURL(), rootCause);
@@ -89,5 +89,5 @@ public class ValidationUtil {
             log.warn("{} at request  {}: {}", errorType, req.getRequestURL(), rootCause.toString());
         }
         return rootCause;
-    }
+    }*/
 }

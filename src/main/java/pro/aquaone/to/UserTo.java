@@ -1,9 +1,8 @@
 package pro.aquaone.to;
 
-import org.hibernate.validator.constraints.Range;
+
 import org.hibernate.validator.constraints.SafeHtml;
 import pro.aquaone.HasEmail;
-import pro.aquaone.util.UserUtil;
 
 import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
@@ -15,9 +14,17 @@ public class UserTo extends BaseTo implements HasEmail, Serializable {
     private static final long serialVersionUID = 1L;
 
     @NotBlank
-    @Size(min = 2, max = 100)
+    @Size(min = 2, max = 100, message = "please enter correct name, must be minimum 2 characters")
     @SafeHtml
-    private String name;
+    private String username;
+
+    @NotBlank
+    @Size(min = 2, max = 50, message = "please enter correct surname, must be minimum 2 characters")
+    @SafeHtml
+    private String surname;
+
+    @SafeHtml
+    private String organization;
 
     @Email
     @NotBlank
@@ -26,26 +33,46 @@ public class UserTo extends BaseTo implements HasEmail, Serializable {
     private String email;
 
     @NotBlank
+    @SafeHtml
     @Size(min = 5, max = 32, message = "length must be between 5 and 32 characters")
     private String password;
 
-    @Size(min = 7)
     @NotNull
+    @Size(min = 7, max = 32, message = "length must be minimum 7 numbers")
     private String phone;
 
-    @Size(min = 5, max = 300)
+    @NotNull
+    @Size(min = 6, max = 300, message = "please enter correct address, must be minimum 6 characters")
     private String address;
 
     public UserTo() {
     }
 
-    public UserTo(Integer id, String name, String email, String password, String phone, String address) {
+    public UserTo(Integer id, String username, String surname, String organization, String email, String password, String phone, String address) {
         super(id);
-        this.name = name;
+        this.username = username;
+        this.surname = surname;
+        this.organization = organization;
         this.email = email;
         this.password = password;
         this.phone = phone;
         this.address = address;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(String organization) {
+        this.organization = organization;
     }
 
     public String getPassword() {
@@ -56,12 +83,12 @@ public class UserTo extends BaseTo implements HasEmail, Serializable {
         this.password = password;
     }
 
-    public String getName() {
-        return name;
+    public String getUsername() {
+        return username;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setUsername(String name) {
+        this.username = name;
     }
 
     @Override
@@ -90,9 +117,11 @@ public class UserTo extends BaseTo implements HasEmail, Serializable {
     }
 
     @Override
-    public String  toString() {
+    public String toString() {
         return "UserTo{" +
-                "name='" + name + '\'' +
+                "username='" + username + '\'' +
+                ", surname='" + surname + '\'' +
+                ", organization='" + organization + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
                 ", phone='" + phone + '\'' +

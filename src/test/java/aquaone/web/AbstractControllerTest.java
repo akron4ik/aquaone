@@ -1,13 +1,9 @@
 package aquaone.web;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.CacheManager;
-import org.springframework.test.context.ActiveProfiles;
-import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.junit.jupiter.web.SpringJUnitWebConfig;
-import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.test.web.servlet.ResultMatcher;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
@@ -18,8 +14,6 @@ import pro.aquaone.repository.JpaUtil;
 import pro.aquaone.service.cart.CartService;
 import pro.aquaone.service.product.ProductService;
 import pro.aquaone.service.user.UserService;
-import pro.aquaone.util.exception.ErrorType;
-import pro.aquaone.web.MessageUtil;
 
 import javax.annotation.PostConstruct;
 
@@ -61,8 +55,8 @@ abstract public class AbstractControllerTest {
     @Autowired
     private WebApplicationContext webApplicationContext;
 
-    @Autowired
-    protected MessageUtil messageUtil;
+   /* @Autowired
+    protected MessageUtil messageUtil;*/
 
     @PostConstruct
     private void postConstruct() {
@@ -81,15 +75,15 @@ abstract public class AbstractControllerTest {
         }
     }
 
-    private String getMessage(String code) {
+   /* private String getMessage(String code) {
         return messageUtil.getMessage(code, MessageUtil.RU_LOCALE);
     }
 
     public ResultMatcher errorType(ErrorType type) {
         return jsonPath("$.type").value(type.name());
-    }
+    }*/
 
-    public ResultMatcher detailMessage(String code) {
+   /* public ResultMatcher detailMessage(String code) {
         return jsonPath("$.details").value(getMessage(code));
-    }
+    }*/
 }

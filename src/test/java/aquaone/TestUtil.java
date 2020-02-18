@@ -6,7 +6,7 @@ import org.springframework.security.test.web.servlet.request.SecurityMockMvcRequ
 import org.springframework.test.web.servlet.MvcResult;
 import org.springframework.test.web.servlet.ResultActions;
 import org.springframework.test.web.servlet.request.RequestPostProcessor;
-import pro.aquaone.AuthorizedUser;
+import pro.aquaone.LoggedUser;
 import pro.aquaone.model.User;
 import pro.aquaone.web.json.JsonUtil;
 
@@ -33,7 +33,7 @@ public class TestUtil {
 
     public static void mockAuthorize(User user) {
         SecurityContextHolder.getContext().setAuthentication(
-                new UsernamePasswordAuthenticationToken(new AuthorizedUser(user), null, user.getRoles()));
+                new UsernamePasswordAuthenticationToken(new LoggedUser(user), null, user.getRoles()));
     }
 
     public static RequestPostProcessor userHttpBasic(User user) {

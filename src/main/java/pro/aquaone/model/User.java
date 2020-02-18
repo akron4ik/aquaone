@@ -8,7 +8,6 @@ import org.hibernate.validator.constraints.SafeHtml;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.CollectionUtils;
 import pro.aquaone.HasEmail;
-import pro.aquaone.HasId;
 import pro.aquaone.View;
 
 import javax.persistence.*;
@@ -28,6 +27,13 @@ public class User extends AbstractBaseEntity implements HasEmail {
     @Size(min = 2, max = 200)
     @NotBlank
     private String name;
+
+    @Column(name = "surname")
+    @Size(min = 2, max = 30)
+    private String surname;
+
+    @Column(name = "organization")
+    private String organization;
 
     @Column(name = "email", nullable = false, unique = true)
     @Email
@@ -67,28 +73,27 @@ public class User extends AbstractBaseEntity implements HasEmail {
     @Size(min = 5, max = 100)
     private String address;
 
-    @OneToMany(fetch = FetchType.LAZY, mappedBy = "user")
-    @OrderBy("date DESC")
-    protected List<Cart> orders;
 
     public User() {
     }
 
     public User(User u){
-        this(u.getId(), u.getName(), u.getEmail(), u.getPassword(), u.isEnabled(),
+        this(u.getId(), u.getName(), u.getSurname(), u.getOrganization(),  u.getEmail(), u.getPassword(), u.isEnabled(),
                 u.getRegistered(), u.getRoles(), u.getPhone(), u.getAddress());
 
     }
 
-    public User(Integer id, String name, String email, String password,
+    public User(Integer id, String name, String surname, String organization, String email, String password,
                  String phone, String address, Role role, Role... roles) {
-        this(id, name, email, password, true, new Date(),  EnumSet.of(role, roles), phone, address);
+        this(id, name, surname, organization, email, password, true, new Date(),  EnumSet.of(role, roles), phone, address);
     }
 
-    public User(Integer id, String name, String email, String password, boolean enabled,
+    public User(Integer id, String name, String surname, String organization, String email, String password, boolean enabled,
                 Date registered, Collection<Role> roles, String phone, String address) {
         super(id);
         this.name = name;
+        this.surname = surname;
+        this.organization = organization;
         this.email = email;
         this.password = password;
         this.enabled = enabled;
@@ -97,6 +102,22 @@ public class User extends AbstractBaseEntity implements HasEmail {
         this.address = address;
         setRoles(roles);
 
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
+    }
+
+    public String getOrganization() {
+        return organization;
+    }
+
+    public void setOrganization(String organization) {
+        this.organization = organization;
     }
 
     public String getEmail() {
@@ -135,9 +156,6 @@ public class User extends AbstractBaseEntity implements HasEmail {
         this.enabled = enabled;
     }
 
-    public List<Cart> getOrders() {
-        return orders;
-    }
 
     public String getName() {
         return name;
@@ -175,8 +193,11 @@ public class User extends AbstractBaseEntity implements HasEmail {
     public String toString() {
         return "User{" +
                 "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", organization='" + organization + '\'' +
                 ", email='" + email + '\'' +
                 ", password='" + password + '\'' +
+                ", enabled=" + enabled +
                 ", registered=" + registered +
                 ", roles=" + roles +
                 ", phone='" + phone + '\'' +

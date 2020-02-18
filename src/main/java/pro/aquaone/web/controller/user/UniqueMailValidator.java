@@ -6,15 +6,14 @@ import org.springframework.stereotype.Component;
 import org.springframework.validation.Errors;
 import pro.aquaone.HasEmail;
 import pro.aquaone.model.User;
-import pro.aquaone.repository.user.CrudUserRepository;
-import pro.aquaone.web.ExceptionInfoHandler;
+import pro.aquaone.repository.user.UserRepository;
 
 
 @Component
 public class UniqueMailValidator implements org.springframework.validation.Validator {
 
     @Autowired
-    private CrudUserRepository repository;
+    private UserRepository repository;
 
     @Override
     public boolean supports(Class<?> clazz) {
@@ -26,7 +25,7 @@ public class UniqueMailValidator implements org.springframework.validation.Valid
         HasEmail user = ((HasEmail) target);
         User dbUser = repository.getUserByEmail(user.getEmail().toLowerCase());
         if (dbUser != null && !dbUser.getId().equals(user.getId())) {
-            errors.rejectValue("email", ExceptionInfoHandler.EXCEPTION_DUPLICATE_EMAIL);
+            errors.rejectValue("email", "Duplicate email");
         }
     }
 }

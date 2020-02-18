@@ -12,17 +12,19 @@ public class UserUtil {
     //public static final int DEFAULT_CALORIES_PER_DAY = 2000;
 
     public static User createNewFromTo(UserTo userTo) {
-        return new User(null, userTo.getName(), userTo.getEmail().toLowerCase(), userTo.getPassword(),
+        return new User(null, userTo.getUsername(), userTo.getSurname(), userTo.getOrganization(), userTo.getEmail().toLowerCase(), userTo.getPassword(),
                 userTo.getPhone(), userTo.getAddress(), Role.ROLE_USER);
     }
 
     public static UserTo asTo(User user) {
-        return new UserTo(user.getId(), user.getName(), user.getEmail(), user.getPassword(),
+        return new UserTo(user.getId(), user.getName(), user.getSurname(), user.getOrganization(), user.getEmail(), user.getPassword(),
                 user.getPhone(), user.getAddress());
     }
 
     public static User updateFromTo(User user, UserTo userTo) {
-        user.setName(userTo.getName());
+        user.setName(userTo.getUsername());
+        user.setSurname(userTo.getSurname());
+        user.setOrganization(userTo.getOrganization());
         user.setEmail(userTo.getEmail().toLowerCase());
         user.setPassword(userTo.getPassword());
         user.setPhone(userTo.getPhone());

@@ -5,16 +5,15 @@ import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.context.annotation.Scope;
 import org.springframework.context.annotation.ScopedProxyMode;
 import org.springframework.data.domain.Sort;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
-import pro.aquaone.AuthorizedUser;
+import pro.aquaone.LoggedUser;
 import pro.aquaone.model.User;
-import pro.aquaone.repository.user.CrudUserRepository;
+import pro.aquaone.repository.user.UserRepository;
 import pro.aquaone.to.UserTo;
 import pro.aquaone.util.UserUtil;
 
@@ -30,11 +29,11 @@ public class UserService implements UserDetailsService {
     private static final Sort SORT_NAME_EMAIL = new Sort(Sort.Direction.ASC, "name", "email");
 
 
-    private final CrudUserRepository repository;
+    private final UserRepository repository;
     private final PasswordEncoder passwordEncoder;
 
     @Autowired
-    public UserService(CrudUserRepository repository, PasswordEncoder passwordEncoder){
+    public UserService(UserRepository repository, PasswordEncoder passwordEncoder){
         this.repository = repository;
         this.passwordEncoder = passwordEncoder;
     }
@@ -95,14 +94,12 @@ public class UserService implements UserDetailsService {
         repository.save(prepareToSave(UserUtil.updateFromTo(user, userTo), passwordEncoder));
     }
 
-
-
     @Override
-    public AuthorizedUser loadUserByUsername(String email) throws UsernameNotFoundException {
+    public LoggedUser loadUserByUsername(String email) throws UsernameNotFoundException {
         User user = repository.getUserByEmail(email.toLowerCase());
         if (user == null) {
             throw new UsernameNotFoundException("User " + email + " is not found");
         }
-        return new AuthorizedUser(user);
+        return new LoggedUser(user);
     }
 }

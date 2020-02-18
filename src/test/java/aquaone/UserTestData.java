@@ -16,21 +16,21 @@ public class UserTestData {
     public static final int USER2_ID = START_SEQ + 2;
     public static final int ADMIN_ID = START_SEQ + 1;
 
-    public static final User USER = new User(USER_ID, "User", "user@yandex.ru",
+    public static final User USER = new User(USER_ID, "User", "User", "", "user@yandex.ru",
             "password", "8(985)123-4567", "Moscow, Amurskay st, 48 - 52",
             Role.ROLE_USER);
 
-    public static final User USER2 = new User(USER2_ID, "User2", "user@mail.ru",
+    public static final User USER2 = new User(USER2_ID, "User2", "User2", "","user@mail.ru",
             "password", "8(985)123-0000", "Moscow, Amurskay st, 48 - 52",
             Role.ROLE_USER);
 
-    public static final User ADMIN = new User(ADMIN_ID, "Admin", "admin@gmail.com",
+    public static final User ADMIN = new User(ADMIN_ID, "Admin", "Admin", "", "admin@gmail.com",
             "admin", "+7(916)123-7654", "Voronezh, Lenin street, 1, 22",
             Role.ROLE_ADMIN, Role.ROLE_USER);
 
     public static void assertMatch(User actual, User expected) {
         assertThat(actual)
-                .isEqualToIgnoringGivenFields(expected, "registered", "orders", "password");
+                .isEqualToIgnoringGivenFields(expected, "registered", "orders", "password", "organization");
     }
     public static void assertMatch(UserTo actual, UserTo expected) {
         assertThat(actual)
@@ -44,7 +44,7 @@ public class UserTestData {
     }
 
     public static void assertMatch(Iterable<User> actual, Iterable<User> expected) {
-        assertThat(actual).usingElementComparatorIgnoringFields("registered", "orders", "password").isEqualTo(expected);
+        assertThat(actual).usingElementComparatorIgnoringFields("registered", "orders", "password", "organization").isEqualTo(expected);
     }
 
     public static ResultMatcher contentJson(User... expected) {

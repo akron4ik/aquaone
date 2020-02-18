@@ -4,19 +4,40 @@
              xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 	http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security.xsd">
 
+
     <http pattern="/resources/**" security="none"/>
-    <http pattern="/webjars/**" security="none"/>
+    <http pattern="/rest/authentication/login" security="none"/>
+    <http pattern="/rest/authentication/register" security="none"/>
+    <http pattern="/rest/products" security="none"/>
+    <http pattern="/rest/products/cart" security="none"/>
+    <http pattern="/rest/cart" security="none"/>
+    <http pattern="/rest/categories" security="none"/>
 
-    <http pattern="/rest/**" use-expressions="true" name="restSecurityFilterChain" create-session="stateless">
+
+
+    <http pattern="/rest/**" use-expressions="true" name="restSecurityFilterChain" entry-point-ref="entryPointUnauthorizedHandler" create-session="stateless">
         <http-basic/>
+        <intercept-url pattern="/rest/**" method="OPTIONS" access="permitAll"/>
+        <intercept-url pattern="/rest/admin/**" access="hasRole('ROLE_ADMIN')"/>
+        <intercept-url pattern="/rest/user" access="isAuthenticated()"/>
+        <custom-filter before="FORM_LOGIN_FILTER" ref="authenticationTokenFilter"/>
         <csrf disabled="true"/>
-        <intercept-url pattern="/rest/products" access="permitAll()"/>
-        <intercept-url pattern="/rest/admin/**" access="permitAll()"/>
-        <intercept-url pattern="/rest/admin/users" access="permitAll()"/>
-        <intercept-url pattern="/rest/profile/register" access="isAnonymous()"/>
-        <!--<intercept-url pattern="/**" access="isAuthenticated()"/>-->
-
+        <!--<intercept-url pattern="/rest/admin/**" access="hasRole('ROLE_ADMIN')"/>
+        <intercept-url pattern="/rest/admin/users" access="hasRole('ROLE_ADMIN')"/>-->
+        <!--<custom-filter before="FORM_LOGIN_FILTER" ref="authenticationTokenFilter"/>
+        <intercept-url pattern="/**" access="isAuthenticated()" />
+        <intercept-url pattern="/" access="isAuthenticated()" />-->
     </http>
+
+    <!--<http>
+        <intercept-url pattern="/login" access="permitAll"/>
+        <intercept-url pattern="/register" access="permitAll"/>
+
+        <intercept-url pattern="/**/admin/**" access="hasRole('ROLE_ADMIN')"/>
+        <form-login login-page="http://localhost:3000/login"
+                    default-target-url="/products"/>
+        <logout logout-success-url="/login"/>
+    </http>-->
 
     <!--<http>
         <intercept-url pattern="/login" access="permitAll()"/>
@@ -39,9 +60,19 @@
         &lt;!&ndash;<csrf disabled="true"/>&ndash;&gt;
     </http>-->
 
-    <beans:bean class="org.springframework.security.crypto.factory.PasswordEncoderFactories" id="passwordEncoder" factory-method="createDelegatingPasswordEncoder"/>
+    <beans:bean class="org.springframework.security.crypto.factory.PasswordEncoderFactories"
+                id="passwordEncoder"
+                factory-method="createDelegatingPasswordEncoder"/>
 
-    <authentication-manager>
+    <beans:bean class="pro.aquaone.util.TokenUtil" id="tokenUtil"/>
+
+    <beans:bean class="pro.aquaone.web.EntryPointUnauthorizedHandler" id="entryPointUnauthorizedHandler"/>
+
+    <beans:bean class="pro.aquaone.web.filter.AuthenticationTokenFilter" id="authenticationTokenFilter">
+        <beans:property name="authenticationManager" ref="authenticationManager"/>
+    </beans:bean>
+
+    <authentication-manager alias="authenticationManager">
         <authentication-provider user-service-ref="userService">
             <password-encoder ref="passwordEncoder"/>
         </authentication-provider>
