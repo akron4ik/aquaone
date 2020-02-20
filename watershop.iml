@@ -20,6 +20,7 @@
           <file>file://$MODULE_DIR$/src/main/resources/spring/spring-security.xml</file>
           <file>file://$MODULE_DIR$/src/main/resources/spring/spring-tools.xml</file>
         </fileset>
+        <fileset id="web application context" profiles="heroku" autodetected="true" />
       </configuration>
     </facet>
     <facet type="web" name="Web">
@@ -129,7 +130,8 @@
     <orderEntry type="library" scope="TEST" name="Maven: org.springframework.security:spring-security-test:5.1.5.RELEASE" level="project" />
     <orderEntry type="library" scope="TEST" name="Maven: org.assertj:assertj-core:3.12.2" level="project" />
     <orderEntry type="library" name="Maven: org.postgresql:postgresql:42.2.6" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-jdbc:9.0.29" level="project" />
-    <orderEntry type="library" name="Maven: org.apache.tomcat:tomcat-juli:9.0.29" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat:tomcat-jdbc:9.0.29" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Maven: org.apache.tomcat:tomcat-juli:9.0.29" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Maven: org.slf4j:jul-to-slf4j:1.7.25" level="project" />
   </component>
 </module>
